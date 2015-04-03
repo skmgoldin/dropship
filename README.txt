@@ -1,5 +1,4 @@
 Dropship
-0.0.1
 
 Dropship is not for deploying apps. Dropship is for deploying yourself.
 
