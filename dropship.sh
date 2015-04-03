@@ -11,11 +11,4 @@ echo "Operating system: $OS"
 BOOTSTRAP=$(./bootstrapselector.sh $OS)
 $BOOTSTRAP
 
-# Set PATH to Homebrew's bin. This has to happen at the top level.
-# BUG: Every time you run dropship, the PMPATH keeps getting re-appended, so the PATH keeps expanding.
-PMPATH=$(./setpath.sh $OS)
-NEWPATH=$PMPATH:$PATH
-PATH=$NEWPATH
-echo "PATH=$NEWPATH" >> ~/.bash_profile
-
-echo "Restart your shell session to complete installation."
+echo You have been dropped in. Good luck.
