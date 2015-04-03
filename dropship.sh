@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Remove old logs, if any.
-rm .droplog
-
 # Detect OS
 OS=$(./osdetect.sh)
 echo "Operating system: $OS"
@@ -11,4 +8,5 @@ echo "Operating system: $OS"
 BOOTSTRAP=$(./bootstrapselector.sh $OS)
 $BOOTSTRAP
 
+rm .droplog
 echo You have been dropped in. Good luck.
