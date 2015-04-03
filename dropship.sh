@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Remove old logs, if any.
-rm -f .droplog
+rm .droplog
 
 # Detect OS
 OS=$(./osdetect.sh)
